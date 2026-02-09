@@ -1,0 +1,26 @@
+import React from "react";
+import "./Certifications.css";
+import { certificationSection } from "../../portfolio";
+
+export default function Certifications() {
+  if (!certificationSection || !certificationSection.display) {
+    return null;
+  }
+
+  return (
+    <div className="certifications-main">
+      <h1>{certificationSection.title}</h1>
+      <p>{certificationSection.subtitle}</p>
+
+      <div className="certifications-grid">
+        {certificationSection.certifications.map((cert, index) => (
+          <div className="cert-card" key={index}>
+            <img src={cert.image} alt={cert.imageAlt} />
+            <h3>{cert.title}</h3>
+            <p>{cert.subtitle}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
