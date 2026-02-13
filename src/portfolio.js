@@ -48,8 +48,9 @@ const skillsSection = {
     "Designing, building, and securing embedded, FPGA, and RFID-based systems from hardware to software.",
   skills: [
     emoji("⚡ Embedded firmware development (STM32, PIC, ESP32) using interrupt-driven and RTOS-based architectures"),
+    emoji("⚡ PCB Design (Altium) & System Bring-up"),
     emoji("⚡ Secure embedded systems and hardware security evaluation (CPA, EMFI, DFA)"),
-    emoji("⚡ FPGA & SoC design using VHDL/Verilog with AXI-based HW/SW co-design"),
+    emoji("⚡ FPGA RTL Design & SoC design using VHDL/Verilog with AXI-based HW/SW co-design"),
     emoji("⚡ RFID & RTLS systems using phase-based localization and RF signal processing"),
     emoji("⚡ Digital signal processing and data analytics using Python"),
     emoji("⚡ Power electronics and control systems for industrial and embedded applications")
@@ -190,35 +191,56 @@ const workExperiences = {
    ================================ */
 const bigProjects = {
   title: "Featured Projects",
-  subtitle: "Representative work in hardware security, RFID systems, and secure embedded platforms.",
+  subtitle:
+    "Selected high-impact projects in hardware security, FPGA systems, and RFID-based localization.",
   projects: [
     {
-      image: require("./assets/images/aes_cpa.png"),
-      projectName: "Side-Channel Analysis on AES-128 (CPA)",
+      image: require("./assets/images/zynq_aes.png"),
+      projectName: "FPGA-Based Out-of-Band AES Encryption (Zynq SoC)",
       projectDesc:
-        "Recovered the full 128-bit AES key from an STM32 implementation using oscilloscope-captured power traces and correlation power analysis.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/-Side-Channel-Analysis-on-AES-128" }]
+        "Hardware-isolated AES engine with secure key management implemented on Zynq SoC.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/uzairashfaq85/-FPGA-Based-Out-of-Band-Encryption-Module-with-Key-Management-System"
+        }
+      ]
     },
     {
       image: require("./assets/images/emfi_dfa.png"),
-      projectName: "Fault Injection on AES-128 (EMFI & DFA)",
+      projectName: "EM Fault Injection & DFA on AES-128",
       projectDesc:
-        "Executed EM fault injection and Differential Fault Analysis to recover cryptographic keys and study countermeasures.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/Fault-Injection-on-AES-128" }]
+        "Electromagnetic fault injection attack with differential fault analysis for cryptographic key recovery.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/uzairashfaq85/Fault-Injection-on-AES-128"
+        }
+      ]
     },
     {
-      image: require("./assets/images/zynq_aes.png"),
-      projectName: "FPGA-Based Out-of-Band Encryption Module (Zynq)",
+      image: require("./assets/images/aes_cpa.png"),
+      projectName: "Correlation Power Analysis (CPA) on AES-128",
       projectDesc:
-        "Designed a hardware-isolated AES encryption engine with secure key management on a Zynq SoC.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/-FPGA-Based-Out-of-Band-Encryption-Module-with-Key-Management-System" }]
+        "Full 128-bit AES key recovery using oscilloscope power traces and statistical leakage analysis.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/uzairashfaq85/-Side-Channel-Analysis-on-AES-128"
+        }
+      ]
     },
     {
       image: require("./assets/images/rfid_phase_loc.png"),
-      projectName: "Phase-Based UHF RFID Localization (RTLS)",
+      projectName: "Phase-Based UHF RFID Localization",
       projectDesc:
-        "Developed a phase-based RTLS pipeline achieving ~±30 cm localization accuracy using UHF RFID.",
-      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/Phase-for-UHF-RFID-Localization" }]
+        "RF signal processing pipeline achieving ±30 cm indoor localization accuracy.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/uzairashfaq85/Phase-for-UHF-RFID-Localization"
+        }
+      ]
     }
   ],
   display: true
@@ -227,7 +249,7 @@ const bigProjects = {
 /* ================================
    Academic / Semester Projects
    ================================ */
-const achievementSection = {
+const otherProjects = {
   title: emoji("Academic & Semester Projects 📚"),
   subtitle:
     "Selected academic projects demonstrating foundations in digital design, control systems, RF, and embedded programming.",
@@ -274,10 +296,11 @@ const achievementSection = {
 };
 
 
-const certificationSection = {
-  title: emoji("Certifications 📜"),
-  subtitle: "Professional and academic certifications supporting my technical background.",
-  certifications: [
+const achievementSection = {
+  title: emoji("Certifications & Professional Development 📜"),
+  subtitle:
+    "Professional certifications, workshops and technical achievements.",
+  achievementsCards: [
     {
       title: "IELTS (British Council)",
       subtitle: "English proficiency certification (valid until Jan 2027).",
@@ -344,8 +367,9 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  otherProjects,
   achievementSection,
-  certificationSection,
+  // certificationSection,
   blogSection,
   talkSection,
   podcastSection,
