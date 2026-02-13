@@ -3,6 +3,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
@@ -19,16 +20,25 @@
     "react-twitter-embed": "3.0.3",
     "sass": "^1.32.8"
   },
+
   "scripts": {
-  "start": "node fetch.js && react-scripts start",
-  "build": "node fetch.js && react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-}
-,
+    "start": "node fetch.js && react-scripts start",
+
+    "build": "node fetch.js && react-scripts build",
+
+    "predeploy": "npm run build",
+
+    "deploy": "gh-pages -d build",
+
+    "test": "react-scripts test",
+
+    "eject": "react-scripts eject"
+  },
+
   "eslintConfig": {
     "extends": "react-app"
   },
+
   "browserslist": {
     "production": [
       ">0.3%",
@@ -46,9 +56,12 @@
       "last 1 safari version"
     ]
   },
+
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.2.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+
+    "gh-pages": "^6.3.0"
   }
 }
