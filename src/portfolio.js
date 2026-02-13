@@ -253,7 +253,7 @@ const otherProjects = {
   title: emoji("Academic & Semester Projects 📚"),
   subtitle:
     "Selected academic projects demonstrating foundations in digital design, control systems, RF, and embedded programming.",
-  achievementsCards: [
+  projects: [
     {
       title: "8-bit Wallace Tree Multiplier (Cadence)",
       subtitle: "High-speed digital arithmetic design using CMOS and Wallace-tree architecture.",
