@@ -1,0 +1,240 @@
+/* ================================
+   Uzair Ashfaq – Portfolio Config
+   ================================ */
+
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation";
+
+/* Splash Screen */
+const splashScreen = {
+  enabled: true,
+  animation: splashAnimation,
+  duration: 1600
+};
+
+/* Illustration */
+const illustration = {
+  animated: true
+};
+
+/* ================================
+   Greeting / Hero
+   ================================ */
+const greeting = {
+  username: "Uzair Ashfaq",
+  title: "Hi, I’m Uzair",
+  subTitle: emoji(
+    "Embedded Systems Engineer 🔐 | RFID & RTLS Software • Secure Embedded Systems • FPGA & SoC Design • Hardware Security (SCA, EMFI, DFA)"
+  ),
+  resumeLink: "",
+  displayGreeting: true
+};
+
+/* ================================
+   Social Links
+   ================================ */
+const socialMediaLinks = {
+  github: "https://github.com/uzairashfaq85",
+  linkedin: "https://www.linkedin.com/in/uzairashfaq85",
+  gmail: "uzairashfaq85@gmail.com",
+  display: true
+};
+
+/* ================================
+   Skills
+   ================================ */
+const skillsSection = {
+  title: "What I Do",
+  subTitle:
+    "Designing and securing embedded and RFID-based systems — from raw hardware measurements to production-ready software platforms.",
+  skills: [
+    emoji("⚡ Embedded firmware development (STM32 / PIC) using interrupt-driven real-time architectures"),
+    emoji("⚡ RFID & RTLS software platforms with phase-based processing and positioning indicators"),
+    emoji("⚡ Hardware security evaluation: CPA, EM fault injection, DFA on AES implementations"),
+    emoji("⚡ FPGA & SoC co-design: RTL (VHDL/Verilog), AXI integration, HW/SW partitioning"),
+    emoji("⚡ RF signal processing and data analytics in Python")
+  ],
+  softwareSkills: [
+    { skillName: "C / C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "STM32", fontAwesomeClassname: "fas fa-microchip" },
+    { skillName: "VHDL / Verilog", fontAwesomeClassname: "fas fa-project-diagram" },
+    { skillName: "RFID / RTLS", fontAwesomeClassname: "fas fa-broadcast-tower" },
+    { skillName: "AES / Crypto", fontAwesomeClassname: "fas fa-lock" },
+    { skillName: "Git / Linux", fontAwesomeClassname: "fab fa-github" }
+  ],
+  display: true
+};
+
+/* ================================
+   Education
+   ================================ */
+const educationInfo = {
+  display: true,
+  schools: [
+    {
+      schoolName: "Grenoble INP – Esisar",
+      logo: require("./assets/images/esisar"),
+      subHeader: "International Master in Embedded Systems Security (IMESS)",
+      duration: "2025 – 2026",
+      desc:
+        "Advanced training in secure embedded systems, hardware security, cryptography, FPGA architectures, and RFID/IoT systems."
+    },
+    {
+      schoolName: "COMSATS University Islamabad",
+      logo: require("./assets/images/COMSATS new logo"),
+      subHeader: "BSc Electrical (Electronics) Engineering",
+      duration: "2020 – 2024",
+      desc:
+        "Strong foundation in embedded systems, digital design, control systems, RF, and power electronics."
+    }
+  ]
+};
+
+/* ================================
+   Tech Focus
+   ================================ */
+const techStack = {
+  viewSkillBars: true,
+  experience: [
+    { Stack: "Embedded & RFID Software", progressPercentage: "90%" },
+    { Stack: "Hardware Security", progressPercentage: "85%" },
+    { Stack: "FPGA / SoC Design", progressPercentage: "80%" }
+  ],
+  displayCodersrank: false
+};
+
+/* ================================
+   Experience
+   ================================ */
+const workExperiences = {
+  display: true,
+  experience: [
+    {
+      role: "Embedded Systems Engineer – RFID & RTLS Software",
+      company: "Acceliot",
+      companylogo: require("./assets/images/acceliot logo"),
+      date: "2026 – Present",
+      desc:
+        "Developing a standalone Software Service Platform (SSP) for UHF RFID-based RTLS and DSAI systems.",
+      descBullets: [
+        "Designed vendor-agnostic data models to ingest raw RFID reader data (RSSI, phase, timestamps, antenna IDs).",
+        "Implemented phase calibration, unwrapping, and phase-difference features for AoA and positioning.",
+        "Built scalable Python pipelines using Pandas, NumPy, and SciPy.",
+        "Applied ML models for detection and estimation with clear validation metrics.",
+        "Delivered reusable software, documentation, and demonstrators on Linux platforms."
+      ]
+    },
+    {
+      role: "Embedded Systems Engineer",
+      company: "Lean Automation",
+      companylogo: require("./assets/images/lean_automation"),
+      date: "2024 – 2025",
+      desc:
+        "Embedded firmware and PCB design for industrial automation systems.",
+      descBullets: [
+        "Developed interrupt-driven firmware for STM32/PIC microcontrollers.",
+        "Integrated UART/I2C drivers and real-time control loops.",
+        "Designed and debugged 4-layer PCBs.",
+        "Led HW/SW integration and system validation."
+      ]
+    }
+  ]
+};
+
+/* ================================
+   Featured Projects (NO images)
+   ================================ */
+const bigProjects = {
+  title: "Featured Projects",
+  subtitle: "Hardware security, RFID systems, and secure embedded platforms.",
+  projects: [
+    {
+      projectName: "Side-Channel Analysis on AES-128 (CPA)",
+      projectDesc:
+        "Recovered the full AES-128 key from an STM32 implementation using oscilloscope-captured power traces and correlation power analysis.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/-Side-Channel-Analysis-on-AES-128" }]
+    },
+    {
+      projectName: "Fault Injection on AES-128 (EMFI & DFA)",
+      projectDesc:
+        "Executed electromagnetic fault injection and Differential Fault Analysis to recover cryptographic keys.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/Fault-Injection-on-AES-128" }]
+    },
+    {
+      projectName: "FPGA-Based Out-of-Band Encryption Module (Zynq)",
+      projectDesc:
+        "Designed a hardware-isolated AES encryption engine with secure key management on a Zynq SoC.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/-FPGA-Based-Out-of-Band-Encryption-Module-with-Key-Management-System" }]
+    },
+    {
+      projectName: "Phase-Based UHF RFID Localization (RTLS)",
+      projectDesc:
+        "Developed a phase-based RTLS pipeline achieving ~±30 cm localization accuracy using UHF RFID.",
+      footerLink: [{ name: "GitHub", url: "https://github.com/uzairashfaq85/Phase-for-UHF-RFID-Localization" }]
+    }
+  ],
+  display: true
+};
+
+/* ================================
+   Academic & Semester Projects
+   ================================ */
+const achievementSection = {
+  title: emoji("Academic & Semester Projects 📚"),
+  subtitle:
+    "Undergraduate and master-level projects demonstrating embedded, control, RF, and digital design foundations.",
+  achievementsCards: [
+    { title: "8-bit Wallace Tree Multiplier", subtitle: "High-speed digital arithmetic design using Cadence." },
+    { title: "Closed-Loop Motor & Generator Control", subtitle: "PID control in MATLAB Simulink with Arduino." },
+    { title: "PIC18F Coffee Machine Controller", subtitle: "Assembly-level embedded control using interrupts." },
+    { title: "RF Transmitter & Receiver (ADS)", subtitle: "RF system design and simulation." },
+    { title: "Buck-Boost Converter", subtitle: "Power electronics design for DC regulation." },
+    { title: "PLC-Based Burnt Fries Detection", subtitle: "Industrial automation using PLC ladder logic." }
+  ],
+  display: true
+};
+
+/* ================================
+   Contact
+   ================================ */
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle:
+    "Open to permanent roles and long-term contracts in Embedded Systems, RFID/RTLS, Secure IoT, and Hardware Security.",
+  email_address: "uzairashfaq85@gmail.com"
+};
+
+/* Disable unused sections */
+const blogSection = { display: false };
+const talkSection = { display: false };
+const podcastSection = { display: false };
+const twitterDetails = { display: false };
+const resumeSection = { display: true };
+
+const openSource = { showGithubProfile: "true", display: true };
+const isHireable = true;
+
+/* ================================
+   Export
+   ================================ */
+export {
+  illustration,
+  greeting,
+  socialMediaLinks,
+  splashScreen,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable,
+  resumeSection
+};
