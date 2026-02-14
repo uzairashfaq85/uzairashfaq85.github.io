@@ -1,67 +1,189 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./StartupProjects.scss";
-import { otherProjects } from "../../portfolio";
+import { bigProjects, otherProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import { useContext } from "react";
 
-export default function StartupProjects() {
+export default function StartupProject() {
+
+  function openUrlInNewTab(url) {
+    if (!url) return;
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
 
   const { isDark } = useContext(StyleContext);
 
-  const [showMore, setShowMore] = useState(false);
-
-  if (!otherProjects.display) return null;
-
-  const limit = otherProjects.showLimit || otherProjects.projects.length;
-
-  const visibleProjects = showMore
-    ? otherProjects.projects
-    : otherProjects.projects.slice(0, limit);
+  if (!bigProjects.display && !otherProjects.display) {
+    return null;
+  }
 
   return (
-    <div className="main" id="projects">
+    <Fade bottom duration={1000} distance="20px">
 
-      <h1 className="project-title">
-        {otherProjects.title}
-      </h1>
+      <div className="main" id="projects">
 
-      <p className="project-subtitle">
-        {otherProjects.subtitle}
-      </p>
+        {/* Featured Projects (bigProjects) */}
+        {bigProjects.display && (
+          <div>
 
-      <div className="repo-cards-div-main">
+            <h1 className="skills-heading">
+              {bigProjects.title}
+            </h1>
 
-        {visibleProjects.map((project, i) => (
-          <div className={`repo-card ${isDark ? "dark-card" : ""}`} key={i}>
+            <p className={
+              isDark
+                ? "dark-mode project-subtitle"
+                : "subTitle project-subtitle"
+            }>
+              {bigProjects.subtitle}
+            </p>
 
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
+            <div className="projects-container">
 
-            <h3>{project.title}</h3>
+              {bigProjects.projects.map((project, i) => (
 
-            <p>{project.subtitle}</p>
+                <div
+                  key={i}
+                  className={
+                    isDark
+                      ? "dark-mode project-card project-card-dark"
+                      : "project-card project-card-light"
+                  }
+                >
+
+                  {project.image && (
+                    <div className="project-image">
+                      <img
+                        src={project.image}
+                        alt={project.projectName}
+                        className="card-image"
+                      />
+                    </div>
+                  )}
+
+                  <div className="project-detail">
+
+                    <h5 className={
+                      isDark
+                        ? "dark-mode card-title"
+                        : "card-title"
+                    }>
+                      {project.projectName}
+                    </h5>
+
+                    <p className={
+                      isDark
+                        ? "dark-mode card-subtitle"
+                        : "card-subtitle"
+                    }>
+                      {project.projectDesc}
+                    </p>
+
+                    {project.footerLink && (
+                      <div className="project-card-footer">
+
+                        {project.footerLink.map((link, i) => (
+
+                          <span
+                            key={i}
+                            className={
+                              isDark
+                                ? "dark-mode project-tag"
+                                : "project-tag"
+                            }
+                            onClick={() =>
+                              openUrlInNewTab(link.url)
+                            }
+                          >
+                            {link.name}
+                          </span>
+
+                        ))}
+
+                      </div>
+                    )}
+
+                  </div>
+
+                </div>
+
+              ))}
+
+            </div>
 
           </div>
-        ))}
+        )}
+
+
+        {/* Academic Projects (otherProjects) */}
+        {otherProjects.display && (
+          <div style={{ marginTop: "80px" }}>
+
+            <h1 className="skills-heading">
+              {otherProjects.title}
+            </h1>
+
+            <p className={
+              isDark
+                ? "dark-mode project-subtitle"
+                : "subTitle project-subtitle"
+            }>
+              {otherProjects.subtitle}
+            </p>
+
+            <div className="projects-container">
+
+              {otherProjects.projects.map((project, i) => (
+
+                <div
+                  key={i}
+                  className={
+                    isDark
+                      ? "dark-mode project-card project-card-dark"
+                      : "project-card project-card-light"
+                  }
+                >
+
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="card-image"
+                    />
+                  </div>
+
+                  <div className="project-detail">
+
+                    <h5 className={
+                      isDark
+                        ? "dark-mode card-title"
+                        : "card-title"
+                    }>
+                      {project.title}
+                    </h5>
+
+                    <p className={
+                      isDark
+                        ? "dark-mode card-subtitle"
+                        : "card-subtitle"
+                    }>
+                      {project.subtitle}
+                    </p>
+
+                  </div>
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+        )}
 
       </div>
 
-      {otherProjects.projects.length > limit && (
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
-
-          <button
-            className="project-button"
-            onClick={() => setShowMore(!showMore)}
-          >
-            {showMore ? "Show Less" : "More Projects"}
-          </button>
-
-        </div>
-      )}
-
-    </div>
+    </Fade>
   );
 }

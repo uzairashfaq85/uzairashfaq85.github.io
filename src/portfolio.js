@@ -253,7 +253,12 @@ const otherProjects = {
   title: emoji("Academic & Semester Projects 📚"),
   subtitle:
     "Selected academic projects demonstrating foundations in digital design, control systems, RF, and embedded programming.",
-  projects: [
+   
+    display: true,
+
+  // showLimit: 4, // ← ADD THIS LINE
+
+    projects: [
     {
       title: "8-bit Wallace Tree Multiplier (Cadence)",
       subtitle: "High-speed digital arithmetic design using CMOS and Wallace-tree architecture.",
@@ -300,7 +305,12 @@ const achievementSection = {
   title: emoji("Certifications & Professional Development 📜"),
   subtitle:
     "Professional certifications, workshops and technical achievements.",
-  achievementsCards: [
+  
+    display: true,
+
+  showLimit: 2, // ← ADD THIS LINE
+
+    achievementsCards: [
     {
       title: "IELTS (British Council)",
       subtitle: "English proficiency certification (valid until Jan 2027).",
