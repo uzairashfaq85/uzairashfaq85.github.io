@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.6738cfb9.css",
-    "main.js": "/static/js/main.cbae2e47.js",
+    "main.css": "/static/css/main.4cef60e6.css",
+    "main.js": "/static/js/main.c018659e.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.d8f8518d.chunk.js": "/static/js/487.d8f8518d.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
-    "static/js/990.7bd7030f.chunk.js": "/static/js/990.7bd7030f.chunk.js",
+    "static/js/990.ca9ba476.chunk.js": "/static/js/990.ca9ba476.chunk.js",
     "static/media/formal_photo.png": "/static/media/formal_photo.956cbe89fbad48fb5360.png",
     "static/media/AI-and-Blockchain.png": "/static/media/AI-and-Blockchain.fcbcf37fb94783b14263.png",
     "static/media/wallacetree.png": "/static/media/wallacetree.2c36d9c7ebb4c1563623.png",
@@ -29,15 +29,15 @@
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.6738cfb9.css.map": "/static/css/main.6738cfb9.css.map",
-    "main.cbae2e47.js.map": "/static/js/main.cbae2e47.js.map",
+    "main.4cef60e6.css.map": "/static/css/main.4cef60e6.css.map",
+    "main.c018659e.js.map": "/static/js/main.c018659e.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.d8f8518d.chunk.js.map": "/static/js/487.d8f8518d.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
-    "990.7bd7030f.chunk.js.map": "/static/js/990.7bd7030f.chunk.js.map"
+    "990.ca9ba476.chunk.js.map": "/static/js/990.ca9ba476.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6738cfb9.css",
-    "static/js/main.cbae2e47.js"
+    "static/css/main.4cef60e6.css",
+    "static/js/main.c018659e.js"
   ]
 }
