@@ -1,53 +1,69 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo } from "../../portfolio";
+import {illustration, contactInfo} from "../../portfolio";
+import {Fade} from "react-reveal";
+import email from "../../assets/lottie/email";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
-  const { isDark } = useContext(StyleContext);
-
-  // tel: needs no spaces
-  const telLink = contactInfo.number
-    ? "tel:" + contactInfo.number.replace(/\s+/g, "")
-    : null;
-
+  const {isDark} = useContext(StyleContext);
   return (
-    <div className="main contact-margin-top" id="contact">
-      <div style={{ textAlign: "center" }}>
-        <h1 className="heading">{contactInfo.title || "Contact Me"}</h1>
-
-        {/* PHONE */}
-        {contactInfo.number && (
-          <div style={{ marginTop: "10px" }}>
-            <a
-              className={isDark ? "dark-mode contact-detail" : "contact-detail"}
-              href={telLink}
-              style={{ fontSize: "20px" }}
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main contact-margin-top" id="contact">
+        <div className="contact-div-main">
+          <div className="contact-header">
+            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode contact-subtitle"
+                  : "subTitle contact-subtitle"
+              }
             >
-              {contactInfo.number}
-            </a>
+              {contactInfo.subtitle}
+            </p>
+            <div
+              className={
+                isDark ? "dark-mode contact-text-div" : "contact-text-div"
+              }
+            >
+              {contactInfo.number && (
+                <>
+                  <a
+                    className="contact-detail"
+                    href={"tel:" + contactInfo.number}
+                  >
+                    {contactInfo.number}
+                  </a>
+                  <br />
+                  <br />
+                </>
+              )}
+              <a
+                className="contact-detail-email"
+                href={"mailto:" + contactInfo.email_address}
+              >
+                {contactInfo.email_address}
+              </a>
+              <br />
+              <br />
+              <SocialMedia />
+            </div>
           </div>
-        )}
-
-        {/* EMAIL */}
-        <div style={{ marginTop: "10px" }}>
-          <a
-            className={
-              isDark ? "dark-mode contact-detail-email" : "contact-detail-email"
-            }
-            href={"mailto:" + contactInfo.email_address}
-            style={{ fontSize: "20px" }}
-          >
-            {contactInfo.email_address}
-          </a>
-        </div>
-
-        {/* ICONS */}
-        <div style={{ marginTop: "20px" }}>
-          <SocialMedia />
+          <div className="contact-image-div">
+            {illustration.animated ? (
+              <DisplayLottie animationData={email} />
+            ) : (
+              <img
+                alt="Man working"
+                src={require("../../assets/images/contactMailDark.svg")}
+              ></img>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 }

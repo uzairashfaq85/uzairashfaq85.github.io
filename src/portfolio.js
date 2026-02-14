@@ -350,8 +350,9 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Open to permanent roles and long-term contracts in Embedded Systems, RFID/RTLS, Secure IoT, and Hardware Security.",
-  email_address: "uzairashfaq85@gmail.com"
+    email_address: "uzairashfaq85@gmail.com"
 };
+
 
 /* Disable unused sections */
 const blogSection = { display: false };
@@ -360,7 +361,7 @@ const podcastSection = { display: false };
 const twitterDetails = { display: false };
 const resumeSection = { display: true };
 
-const openSource = { showGithubProfile: "false", display: true };
+const openSource = { showGithubProfile: "true", display: true };
 const isHireable = true;
 
 /* ================================
