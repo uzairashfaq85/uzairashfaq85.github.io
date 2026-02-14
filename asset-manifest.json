@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c9afc7d.css",
-    "main.js": "/static/js/main.0c1f21da.js",
-    "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
-    "static/js/64.41912c0a.chunk.js": "/static/js/64.41912c0a.chunk.js",
-    "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.6b18baac.chunk.js": "/static/js/769.6b18baac.chunk.js",
+    "main.css": "/static/css/main.8e70ea13.css",
+    "main.js": "/static/js/main.cbae2e47.js",
+    "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
+    "static/js/487.d8f8518d.chunk.js": "/static/js/487.d8f8518d.chunk.js",
+    "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
+    "static/js/990.7bd7030f.chunk.js": "/static/js/990.7bd7030f.chunk.js",
     "static/media/formal_photo.png": "/static/media/formal_photo.956cbe89fbad48fb5360.png",
     "static/media/AI-and-Blockchain.png": "/static/media/AI-and-Blockchain.fcbcf37fb94783b14263.png",
     "static/media/wallacetree.png": "/static/media/wallacetree.2c36d9c7ebb4c1563623.png",
@@ -29,15 +29,15 @@
     "static/media/resume.pdf": "/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.9c9afc7d.css.map": "/static/css/main.9c9afc7d.css.map",
-    "main.0c1f21da.js.map": "/static/js/main.0c1f21da.js.map",
-    "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
-    "64.41912c0a.chunk.js.map": "/static/js/64.41912c0a.chunk.js.map",
-    "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
-    "769.6b18baac.chunk.js.map": "/static/js/769.6b18baac.chunk.js.map"
+    "main.8e70ea13.css.map": "/static/css/main.8e70ea13.css.map",
+    "main.cbae2e47.js.map": "/static/js/main.cbae2e47.js.map",
+    "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
+    "487.d8f8518d.chunk.js.map": "/static/js/487.d8f8518d.chunk.js.map",
+    "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
+    "990.7bd7030f.chunk.js.map": "/static/js/990.7bd7030f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c9afc7d.css",
-    "static/js/main.0c1f21da.js"
+    "static/css/main.8e70ea13.css",
+    "static/js/main.cbae2e47.js"
   ]
 }
