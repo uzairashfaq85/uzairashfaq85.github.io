@@ -360,7 +360,7 @@ const podcastSection = { display: false };
 const twitterDetails = { display: false };
 const resumeSection = { display: true };
 
-const openSource = { showGithubProfile: "true", display: true };
+const openSource = { showGithubProfile: "false", display: true };
 const isHireable = true;
 
 /* ================================
