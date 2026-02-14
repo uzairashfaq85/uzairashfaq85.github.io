@@ -1,17 +1,13 @@
 @font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Agustina";
+  src: url("./assets/fonts/Agustina.woff") format("woff");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
