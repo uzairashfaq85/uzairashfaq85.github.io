@@ -1,1 +1,46 @@
-{"data":{"user":{"name":"Uzair Ashfaq","bio":"Embedded Systems Security Master’s Student | Firmware Engineer (C/C++, STM32) | Hardware Security Research (SCA, Fault Injection, AES) | FPGA Design ","avatarUrl":"https://avatars.githubusercontent.com/u/177719464?v=4","location":"France","pinnedItems":{"totalCount":0,"edges":[]}}}}
+{
+  "data": {
+    "user": {
+      "id": "uzair-profile",
+      "name": "Uzair Ashfaq",
+      "login": "uzairashfaq85",
+      "bio": "Embedded Systems Engineer 🔐 | RFID & RTLS • FPGA • Hardware Security",
+      "location": "France",
+      "isHireable": true,
+      "avatarUrl": "/formal_photo.png",
+
+      "pinnedItems": {
+        "edges": [
+          {
+            "node": {
+              "id": "1",
+              "name": "AES-Side-Channel-Analysis",
+              "description": "Correlation Power Analysis attack on AES-128 using STM32",
+              "url": "https://github.com/uzairashfaq85/AES-Side-Channel-Analysis",
+              "stargazers": { "totalCount": 0 },
+              "forkCount": 0,
+              "primaryLanguage": {
+                "name": "C",
+                "color": "#178600"
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "2",
+              "name": "FPGA-AES-Encryption",
+              "description": "FPGA based AES encryption core with secure key management",
+              "url": "https://github.com/uzairashfaq85/FPGA-AES-Encryption",
+              "stargazers": { "totalCount": 0 },
+              "forkCount": 0,
+              "primaryLanguage": {
+                "name": "Verilog",
+                "color": "#b2b7f8"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
