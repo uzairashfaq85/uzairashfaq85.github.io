@@ -18,13 +18,29 @@ export default function StartupProject() {
     return null;
   }
 
+  // Defensive: ensure project lists are arrays to avoid runtime crashes
+  const safeBigProjects = Array.isArray(bigProjects && bigProjects.projects)
+    ? bigProjects.projects
+    : [];
+
+  const safeOtherProjects = Array.isArray(otherProjects && otherProjects.projects)
+    ? otherProjects.projects
+    : [];
+
+  if (!Array.isArray(bigProjects.projects)) {
+    console.error("bigProjects.projects is not an array", bigProjects.projects);
+  }
+  if (!Array.isArray(otherProjects.projects)) {
+    console.error("otherProjects.projects is not an array", otherProjects.projects);
+  }
+
   return (
     <Fade bottom duration={1000} distance="20px">
 
       <div className="main" id="projects">
 
         {/* Featured Projects (bigProjects) */}
-        {bigProjects.display && (
+        {bigProjects.display && safeBigProjects.length > 0 && (
           <div>
 
             <h1 className="skills-heading">
@@ -41,7 +57,7 @@ export default function StartupProject() {
 
             <div className="projects-container">
 
-              {bigProjects.projects.map((project, i) => (
+              {safeBigProjects.map((project, i) => (
 
                 <div
                   key={i}
@@ -117,7 +133,7 @@ export default function StartupProject() {
 
 
         {/* Academic Projects (otherProjects) */}
-        {otherProjects.display && (
+        {otherProjects.display && safeOtherProjects.length > 0 && (
           <div style={{ marginTop: "80px" }}>
 
             <h1 className="skills-heading">
@@ -134,7 +150,7 @@ export default function StartupProject() {
 
             <div className="projects-container">
 
-              {otherProjects.projects.map((project, i) => (
+              {safeOtherProjects.map((project, i) => (
 
                 <div
                   key={i}
