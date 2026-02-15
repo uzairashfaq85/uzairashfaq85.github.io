@@ -62,7 +62,10 @@ const greeting = {
   subTitle: emoji(
     "Embedded Systems Engineer 🔐 | RFID & RTLS Software • Secure Embedded Systems • FPGA & SoC Design • Hardware Security (SCA, EMFI, DFA) • RF Signal Processing"
   ),
-  resumeLink: "/CV_UZAIR_IMESS_Embedded.pdf",
+  // resumeLink: "/CV_UZAIR_IMESS_Embedded.pdf",
+  resumeLink:
+  "https://uzairashfaq85.github.io/CV_UZAIR_IMESS_Embedded.pdf",
+
   profileImage: profilePhoto,
   displayGreeting: true
 };
