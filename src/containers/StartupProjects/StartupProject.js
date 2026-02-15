@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./StartupProjects.scss";
 import { bigProjects, otherProjects } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import Button from "../../components/button/Button";
 
 export default function StartupProject() {
 
@@ -143,7 +144,9 @@ export default function StartupProject() {
 
             <div className="projects-container">
 
-              {otherProjects.projects.map((project, i) => (
+              {otherProjects.projects
+                .slice(0, otherProjects.showLimit || otherProjects.projects.length)
+                .map((project, i) => (
 
                 <div
                   key={i}
@@ -187,6 +190,14 @@ export default function StartupProject() {
               ))}
 
             </div>
+
+            {otherProjects.showLimit && otherProjects.projects.length > otherProjects.showLimit && (
+              <Button
+                text={"More Projects"}
+                className="project-button"
+                href="#projects"
+              />
+            )}
 
           </div>
         )}

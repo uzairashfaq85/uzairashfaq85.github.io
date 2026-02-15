@@ -22,6 +22,8 @@ import picCoffee from "./assets/images/PIC18f.png";
 import rfProject from "./assets/images/rf.png";
 import buckBoost from "./assets/images/buckboost.png";
 import plcProject from "./assets/images/plcproject.png";
+import enhancedCruiseControl from "./assets/images/closedloopmotor.png";
+import automaticStreetlight from "./assets/images/rf.png";
 
 import skillIcon from "./assets/images/skill.svg";
 
@@ -294,10 +296,15 @@ const otherProjects = {
     "Selected academic projects demonstrating foundations in digital design, control systems, RF, and embedded programming.",
    
     display: true,
-
-  // showLimit: 4, // ← ADD THIS LINE
+    showLimit: 6,
 
     projects: [
+    {
+      title: "Enhanced Cruise Control with Driver Alert for Hazardous Road Conditions",
+      subtitle: "Final-Year Project - Advanced cruise control system with sensor fusion and real-time hazard alerts.",
+      image: enhancedCruiseControl,
+      footerLink: []
+    },
     {
       title: "8-bit Wallace Tree Multiplier (Cadence)",
       subtitle: "High-speed digital arithmetic design using CMOS and Wallace-tree architecture.",
@@ -334,6 +341,12 @@ const otherProjects = {
       subtitle: "Industrial automation system using PLC ladder logic.",
       image: plcProject,
       footerLink: []
+    },
+    {
+      title: "Automatic Street Lighting System",
+      subtitle: "Energy-efficient automatic street lighting using infrared sensors and microcontrollers.",
+      image: automaticStreetlight,
+      footerLink: []
     }
   ],
   display: true
@@ -351,7 +364,6 @@ const achievementSection = {
     "Professional certifications, workshops and technical achievements.",
 
   display: true,
-
   showLimit: 6,
 
   achievementsCards: [
