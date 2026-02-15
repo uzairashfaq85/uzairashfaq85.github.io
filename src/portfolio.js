@@ -24,6 +24,21 @@ import buckBoost from "./assets/images/buckboost.png";
 import plcProject from "./assets/images/plcproject.png";
 
 import skillIcon from "./assets/images/skill.svg";
+
+import primaveraP6 from "./assets/images/primavera-p6.png"; 
+import ielts from "./assets/images/IELTS.png"; 
+import googleSoftSkills from "./assets/images/GoogleSoftSkillsProgram.png"; 
+import aspireLeaders from "./assets/images/2024AspireLeadersProgram.png";
+import ibmAI from "./assets/images/IBM.png"; 
+import linkedinProfile from "./assets/images/5waysbuildbetterlinkedinprofile.png";
+import generativeAI from "./assets/images/IntroductiontoGenerativeAI.png";
+import excel from "./assets/images/Excel.png"; 
+import aiForEveryone from "./assets/images/AIforeveryone.png"; 
+import encoderDecoder from "./assets/images/encoderdecoder.png";
+import vertexAI from "./assets/images/VertexAI.png";
+import fundamentalsManagement from "./assets/images/fundamentalsofmanagement.png";
+import aiInsight from "./assets/images/ArtificialIntelligenceInsightforBeginners.png";
+import pec from "./assets/images/PEC.png";
 import aiBlockchain from "./assets/images/AI-and-Blockchain.png";
 
 /* Splash Screen */
@@ -47,7 +62,7 @@ const greeting = {
   subTitle: emoji(
     "Embedded Systems Engineer 🔐 | RFID & RTLS Software • Secure Embedded Systems • FPGA & SoC Design • Hardware Security (SCA, EMFI, DFA) • RF Signal Processing"
   ),
-  resumeLink: "",
+  resumeLink: "/CV_UZAIR_IMESS_Embedded.pdf",
   profileImage: profilePhoto,
   displayGreeting: true
 };
@@ -322,124 +337,218 @@ const otherProjects = {
 };
 
 
+/* ================================
+   Certifications & Professional Development
+   ================================ */
+
 const achievementSection = {
   title: emoji("Certifications & Professional Development 📜"),
+
   subtitle:
     "Professional certifications, workshops and technical achievements.",
-  
-    display: true,
 
-  showLimit: 6, // Show 6 certifications initially
+  display: true,
 
-    achievementsCards: [
+  showLimit: 6,
+
+  achievementsCards: [
     {
       title: "Advanced Scheduling and Project Optimization in Primavera P6",
-      subtitle: "Issued by Packt (Jun 2025) • Credential ID: WIMCN1MORG2T",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Packt • Issued Jun 2025 • Credential ID: WIMCN1MORG2T",
+      image: primaveraP6,
+      imageAlt: "Primavera P6 Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/WIMCN1MORG2T"
+        }
+      ]
     },
+
     {
       title: "IELTS",
-      subtitle: "British Council • Issued: Jan 2025 · Expires: Jan 2027 • Skills: Spoken English",
-      image: skillIcon,
-      imageAlt: "Certification",
+      subtitle:
+        "British Council • Issued Jan 2025 • Valid until Jan 2027",
+      image: ielts,
+      imageAlt: "IELTS Certification",
       footerLink: []
     },
+
     {
       title: "Google Soft Skills Program",
-      subtitle: "Issued: Dec 2024",
-      image: skillIcon,
-      imageAlt: "Certification",
+      subtitle:
+        "Google • Issued Dec 2024",
+      image: googleSoftSkills,
+      imageAlt: "Google Soft Skills Program",
       footerLink: []
     },
+
     {
       title: "2024 Aspire Leaders Program",
-      subtitle: "Aspire Institute • Issued: Nov 2024",
-      image: skillIcon,
-      imageAlt: "Certification",
+      subtitle:
+        "Aspire Institute • Issued Nov 2024",
+      image: aspireLeaders,
+      imageAlt: "Aspire Leaders Program",
       footerLink: []
     },
+
     {
       title: "Introduction to Artificial Intelligence (AI)",
-      subtitle: "IBM • Issued: Sep 2023 • Credential ID: 456AFFCRZLF8",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "IBM • Issued Sep 2023 • Credential ID: 456AFFCRZLF8",
+      image: ibmAI,
+      imageAlt: "IBM AI Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/456AFFCRZLF8"
+        }
+      ]
     },
+
     {
       title: "5 Ways to Build a Better LinkedIn Profile",
-      subtitle: "Coursera • Issued: Feb 2024 • Credential ID: H3V9Q6Y5PBM3",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Coursera • Issued Feb 2024 • Credential ID: H3V9Q6Y5PBM3",
+      image: linkedinProfile,
+      imageAlt: "LinkedIn Profile Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/H3V9Q6Y5PBM3"
+        }
+      ]
     },
+
     {
       title: "Introduction to Generative AI",
-      subtitle: "Google Cloud Training Online • Issued: Oct 2023 • Credential ID: SKD88H2YU7TN",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Google Cloud Training • Issued Oct 2023",
+      image: generativeAI,
+      imageAlt: "Generative AI Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/SKD88H2YU7TN"
+        }
+      ]
     },
+
     {
       title: "Getting Started with Microsoft Excel",
-      subtitle: "Google Cloud Training Online • Issued: Aug 2023 • Credential ID: BVP2H2EY8J8L",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Google Cloud Training • Issued Aug 2023",
+      image: excel,
+      imageAlt: "Excel Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/BVP2H2EY8J8L"
+        }
+      ]
     },
+
     {
       title: "Web3 and Blockchain Fundamentals",
-      subtitle: "INSEAD • Issued: Oct 2023 • Credential ID: FN4ALBJA66FC",
+      subtitle:
+        "INSEAD • Issued Oct 2023",
       image: aiBlockchain,
-      imageAlt: "Certification",
-      footerLink: []
+      imageAlt: "Blockchain Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/FN4ALBJA66FC"
+        }
+      ]
     },
+
     {
       title: "AI For Everyone",
-      subtitle: "DeepLearning.AI • Issued: Jan 2024 • Credential ID: KBQDDBWQTL3N",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "DeepLearning.AI • Issued Jan 2024",
+      image: aiForEveryone,
+      imageAlt: "AI For Everyone Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/KBQDDBWQTL3N"
+        }
+      ]
     },
+
     {
       title: "Encoder-Decoder Architecture",
-      subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: GMSFGANL726Q",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Google Cloud Training • Issued Jan 2024",
+      image: encoderDecoder,
+      imageAlt: "Encoder Decoder Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/GMSFGANL726Q"
+        }
+      ]
     },
+
     {
       title: "Introduction to Vertex AI Studio",
-      subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: WQ9ZTBK8VKQ7",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "Google Cloud Training • Issued Jan 2024",
+      image: vertexAI,
+      imageAlt: "Vertex AI Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/WQ9ZTBK8VKQ7"
+        }
+      ]
     },
+
     {
       title: "Fundamentals of Management",
-      subtitle: "UC Irvine • Issued: Mar 2025 • Credential ID: ZIK516F9S02W",
-      image: skillIcon,
-      imageAlt: "Certification",
-      footerLink: []
+      subtitle:
+        "UC Irvine • Issued Mar 2025",
+      image: fundamentalsManagement,
+      imageAlt: "Management Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url:
+            "https://www.coursera.org/account/accomplishments/records/ZIK516F9S02W"
+        }
+      ]
     },
+
     {
       title: "Artificial Intelligence – Insight for Beginners",
-      subtitle: "Microsoft Student Ambassadors – Imagine Cup",
-      image: skillIcon,
-      imageAlt: "Certification",
+      subtitle:
+        "Microsoft Student Ambassadors",
+      image: aiInsight,
+      imageAlt: "AI Insight Certification",
       footerLink: []
     },
+
     {
       title: "Registered Electrical Engineer",
-      subtitle: "Pakistan Engineering Council (PEC) • Issued: Dec 2024",
-      image: skillIcon,
-      imageAlt: "Certification",
+      subtitle:
+        "Pakistan Engineering Council • Issued Dec 2024",
+      image: pec,
+      imageAlt: "PEC Certification",
       footerLink: []
     }
-  ],
-  display: true
+  ]
 };
+
 
 /* ================================
    Contact
