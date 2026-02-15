@@ -1,10 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./StartupProjects.scss";
 import { bigProjects, otherProjects } from "../../portfolio";
-import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Ensure the section is always visible after a minimal delay
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   function openUrlInNewTab(url) {
     if (!url) return;
@@ -18,29 +27,13 @@ export default function StartupProject() {
     return null;
   }
 
-  // Defensive: ensure project lists are arrays to avoid runtime crashes
-  const safeBigProjects = Array.isArray(bigProjects && bigProjects.projects)
-    ? bigProjects.projects
-    : [];
-
-  const safeOtherProjects = Array.isArray(otherProjects && otherProjects.projects)
-    ? otherProjects.projects
-    : [];
-
-  if (!Array.isArray(bigProjects.projects)) {
-    console.error("bigProjects.projects is not an array", bigProjects.projects);
-  }
-  if (!Array.isArray(otherProjects.projects)) {
-    console.error("otherProjects.projects is not an array", otherProjects.projects);
-  }
-
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <div className={`startup-projects-container ${isVisible ? 'fade-in' : 'fade-out'}`}>
 
       <div className="main" id="projects">
 
         {/* Featured Projects (bigProjects) */}
-        {bigProjects.display && safeBigProjects.length > 0 && (
+        {bigProjects.display && (
           <div>
 
             <h1 className="skills-heading">
@@ -57,7 +50,7 @@ export default function StartupProject() {
 
             <div className="projects-container">
 
-              {safeBigProjects.map((project, i) => (
+              {bigProjects.projects.map((project, i) => (
 
                 <div
                   key={i}
@@ -133,7 +126,7 @@ export default function StartupProject() {
 
 
         {/* Academic Projects (otherProjects) */}
-        {otherProjects.display && safeOtherProjects.length > 0 && (
+        {otherProjects.display && (
           <div style={{ marginTop: "80px" }}>
 
             <h1 className="skills-heading">
@@ -150,7 +143,7 @@ export default function StartupProject() {
 
             <div className="projects-container">
 
-              {safeOtherProjects.map((project, i) => (
+              {otherProjects.projects.map((project, i) => (
 
                 <div
                   key={i}
@@ -161,15 +154,13 @@ export default function StartupProject() {
                   }
                 >
 
-                  {project.image && (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="card-image"
-                      />
-                    </div>
-                  )}
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="card-image"
+                    />
+                  </div>
 
                   <div className="project-detail">
 
@@ -201,7 +192,6 @@ export default function StartupProject() {
         )}
 
       </div>
-
-    </Fade>
+    </div>
   );
 }

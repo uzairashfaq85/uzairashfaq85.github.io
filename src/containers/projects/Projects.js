@@ -39,36 +39,42 @@ export default function Projects() {
   function setrepoFunction(array) {
     setrepo(array);
   }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
+  // If open source section is disabled, render nothing
+  if (!openSource.display) {
+    return <FailedLoading />;
+  }
+
+  return (
+    <Suspense fallback={renderLoader()}>
+      <div className="main" id="opensource">
+        <h1 className="project-title">Open Source Projects</h1>
+
+        <div className="repo-cards-div-main">
+          {Array.isArray(repo) ? (
+            repo.map((v, i) => {
               if (!v) {
                 console.error(
                   `Github Object for repository number : ${i} is undefined`
                 );
+                return null;
               }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
-          </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
+              return <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />;
+            })
+          ) : (
+            <div style={{ padding: "1rem 0", color: "#6b6b6b" }}>
+              No repositories found or an error occurred while loading GitHub
+              data.
+            </div>
+          )}
         </div>
-      </Suspense>
-    );
-  } else {
-    return <FailedLoading />;
-  }
+
+        <Button
+          text={"More Projects"}
+          className="project-button"
+          href={socialMediaLinks.github}
+          newTab={true}
+        />
+      </div>
+    </Suspense>
+  );
 }

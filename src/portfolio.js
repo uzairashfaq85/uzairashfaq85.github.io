@@ -26,26 +26,6 @@ import plcProject from "./assets/images/plcproject.png";
 import skillIcon from "./assets/images/skill.svg";
 import aiBlockchain from "./assets/images/AI-and-Blockchain.png";
 
-// Academic Projects Images
-import enhancedCruiseControl from "./assets/images/Enhcancedcruisecontrol.png";
-import automaticStreetlight from "./assets/images/AutomaticStreetlight.png";
-
-// Certification Images
-import primaveraP6 from "./assets/images/primavera-p6.png";
-import ielts from "./assets/images/IELTS.png";
-import googleSoftSkills from "./assets/images/GoogleSoftSkillsProgram.png";
-import aspireLeaders from "./assets/images/2024AspireLeadersProgram.png";
-import ibmAI from "./assets/images/IBM.png";
-import linkedinProfile from "./assets/images/5waysbuildbetterlinkedinprofile.png";
-import generativeAI from "./assets/images/IntroductiontoGenerativeAI.png";
-import excel from "./assets/images/Excel.png";
-import aiForEveryone from "./assets/images/AIforeveryone.png";
-import encoderDecoder from "./assets/images/encoderdecoder.png";
-import vertexAI from "./assets/images/VertexAI.png";
-import fundamentalsManagement from "./assets/images/fundamentalsofmanagement.png";
-import aiInsight from "./assets/images/ArtificialIntelligenceInsightforBeginners.png";
-import pec from "./assets/images/PEC.png";
-
 /* Splash Screen */
 const splashScreen = {
   enabled: true,
@@ -301,13 +281,6 @@ const otherProjects = {
 
     projects: [
     {
-      title: "Enhanced Cruise Control with Driver Alert for Hazardous Road Conditions",
-      subtitle: "Final-Year Project - Advanced cruise control system with sensor fusion and real-time hazard alerts.",
-      description: "Developed an advanced cruise control system that leverages sensors to enhance road safety. The system dynamically adjusts vehicle speed and provides real-time hazard alerts. Designed system architecture, implemented sensor fusion, and conducted extensive testing for improved safety and reliability.",
-      image: enhancedCruiseControl,
-      footerLink: []
-    },
-    {
       title: "8-bit Wallace Tree Multiplier (Cadence)",
       subtitle: "High-speed digital arithmetic design using CMOS and Wallace-tree architecture.",
       image: wallaceTree,
@@ -343,13 +316,6 @@ const otherProjects = {
       subtitle: "Industrial automation system using PLC ladder logic.",
       image: plcProject,
       footerLink: []
-    },
-    {
-      title: "Automatic Street Lighting System",
-      subtitle: "Energy-efficient automatic street lighting using infrared sensors and microcontrollers.",
-      description: "Developed an energy-efficient automatic street lighting system using infrared sensors and microcontrollers. The system optimizes energy usage by dynamically controlling lighting based on real-time detection, ensuring effective and sustainable operation.",
-      image: automaticStreetlight,
-      footerLink: []
     }
   ],
   display: true
@@ -369,155 +335,105 @@ const achievementSection = {
     {
       title: "Advanced Scheduling and Project Optimization in Primavera P6",
       subtitle: "Issued by Packt (Jun 2025) • Credential ID: WIMCN1MORG2T",
-      image: primaveraP6,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/WIMCN1MORG2T"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "IELTS",
       subtitle: "British Council • Issued: Jan 2025 · Expires: Jan 2027 • Skills: Spoken English",
-      image: ielts,
+      image: skillIcon,
       imageAlt: "Certification",
       footerLink: []
     },
     {
       title: "Google Soft Skills Program",
       subtitle: "Issued: Dec 2024",
-      image: googleSoftSkills,
+      image: skillIcon,
       imageAlt: "Certification",
       footerLink: []
     },
     {
       title: "2024 Aspire Leaders Program",
       subtitle: "Aspire Institute • Issued: Nov 2024",
-      image: aspireLeaders,
+      image: skillIcon,
       imageAlt: "Certification",
       footerLink: []
     },
     {
       title: "Introduction to Artificial Intelligence (AI)",
       subtitle: "IBM • Issued: Sep 2023 • Credential ID: 456AFFCRZLF8",
-      image: ibmAI,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/456AFFCRZLF8"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "5 Ways to Build a Better LinkedIn Profile",
       subtitle: "Coursera • Issued: Feb 2024 • Credential ID: H3V9Q6Y5PBM3",
-      image: linkedinProfile,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/H3V9Q6Y5PBM3"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Introduction to Generative AI",
       subtitle: "Google Cloud Training Online • Issued: Oct 2023 • Credential ID: SKD88H2YU7TN",
-      image: generativeAI,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/SKD88H2YU7TN"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Getting Started with Microsoft Excel",
       subtitle: "Google Cloud Training Online • Issued: Aug 2023 • Credential ID: BVP2H2EY8J8L",
-      image: excel,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/BVP2H2EY8J8L"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Web3 and Blockchain Fundamentals",
       subtitle: "INSEAD • Issued: Oct 2023 • Credential ID: FN4ALBJA66FC",
       image: aiBlockchain,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/FN4ALBJA66FC"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "AI For Everyone",
       subtitle: "DeepLearning.AI • Issued: Jan 2024 • Credential ID: KBQDDBWQTL3N",
-      image: aiForEveryone,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/KBQDDBWQTL3N"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Encoder-Decoder Architecture",
       subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: GMSFGANL726Q",
-      image: encoderDecoder,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/GMSFGANL726Q"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Introduction to Vertex AI Studio",
       subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: WQ9ZTBK8VKQ7",
-      image: vertexAI,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/WQ9ZTBK8VKQ7"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Fundamentals of Management",
       subtitle: "UC Irvine • Issued: Mar 2025 • Credential ID: ZIK516F9S02W",
-      image: fundamentalsManagement,
+      image: skillIcon,
       imageAlt: "Certification",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.coursera.org/account/accomplishments/records/ZIK516F9S02W"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Artificial Intelligence – Insight for Beginners",
       subtitle: "Microsoft Student Ambassadors – Imagine Cup",
-      image: aiInsight,
+      image: skillIcon,
       imageAlt: "Certification",
       footerLink: []
     },
     {
       title: "Registered Electrical Engineer",
       subtitle: "Pakistan Engineering Council (PEC) • Issued: Dec 2024",
-      image: pec,
+      image: skillIcon,
       imageAlt: "Certification",
       footerLink: []
     }
