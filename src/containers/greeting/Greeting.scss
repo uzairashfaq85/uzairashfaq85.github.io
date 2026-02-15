@@ -90,8 +90,71 @@
   }
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
+  .main {
+    width: 95%;
+    padding: 15px 10px;
+  }
+  .greet-main {
+    width: 95%;
+    padding: 15px 10px;
+  }
+  .greeting-text {
+    font-size: 24px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .greeting-image-div {
+    height: 200px;
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .empty-div {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .greeting-text {
+    font-size: 32px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .button-greeting-div {
+    justify-content: center;
+    gap: 10px;
+  }
+  .greeting-image-div {
+    height: 280px;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
   .greeting-text {
     font-size: 50px;
   }
@@ -99,29 +162,24 @@
     font-size: 20px;
   }
 }
-@media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
   .greeting-text {
-    font-size: 30px;
-    text-align: center;
+    font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
+    font-size: 20px;
   }
 }
 
-@media (max-width: 320px) {
-  .main {
-    width: auto;
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .greeting-text {
+    font-size: 70px;
+  }
+  .greeting-text-p {
+    font-size: 30px;
+    line-height: 40px;
   }
 }

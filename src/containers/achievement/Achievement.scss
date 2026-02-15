@@ -15,13 +15,24 @@
   color: $subTitle;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
   .achievement-heading {
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .achievement-subtitle {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
-@media (max-width: 768px) {
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
   .achievement-heading {
     font-size: 30px;
     text-align: center;
@@ -30,5 +41,74 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .achievement-heading {
+    font-size: 40px;
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .achievement-heading {
+    font-size: 40px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .achievement-heading {
+    font-size: 56px;
+  }
+}
+
+/* Achievement Button Styles */
+.achievement-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.achievement-button {
+  background-color: #6318b8;
+  color: #ffffff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 12px rgba(99, 24, 184, 0.3);
+
+  &:hover {
+    background-color: #5110a0;
+    box-shadow: 0 6px 20px rgba(99, 24, 184, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* Media Query - Responsive Button */
+@media (max-width: 768px) {
+  .achievement-button {
+    padding: 13px 32px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-button {
+    padding: 12px 28px;
+    font-size: 0.85rem;
   }
 }

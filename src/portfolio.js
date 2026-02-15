@@ -4,6 +4,47 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
+import profilePhoto from "./assets/images/formal_photo.png";
+import esisarLogo from "./assets/images/esisar.png";
+import comsatsLogo from "./assets/images/comsats.png";
+import acceliotLogo from "./assets/images/acceliot_logo.png";
+import leanLogo from "./assets/images/lean_automation.png";
+import codealphaLogo from "./assets/images/codealpha.png";
+
+import zynqAES from "./assets/images/zynq_aes.png";
+import emfiDfa from "./assets/images/emfi_dfa.png";
+import aesCpa from "./assets/images/aes_cpa.png";
+import rfidPhase from "./assets/images/rfid_phase_loc.png";
+
+import wallaceTree from "./assets/images/wallacetree.png";
+import closedLoopMotor from "./assets/images/closedloopmotor.png";
+import picCoffee from "./assets/images/PIC18f.png";
+import rfProject from "./assets/images/rf.png";
+import buckBoost from "./assets/images/buckboost.png";
+import plcProject from "./assets/images/plcproject.png";
+
+import skillIcon from "./assets/images/skill.svg";
+import aiBlockchain from "./assets/images/AI-and-Blockchain.png";
+
+// Academic Projects Images
+import enhancedCruiseControl from "./assets/images/Enhcancedcruisecontrol.png";
+import automaticStreetlight from "./assets/images/AutomaticStreetlight.png";
+
+// Certification Images
+import primaveraP6 from "./assets/images/primavera-p6.png";
+import ielts from "./assets/images/IELTS.png";
+import googleSoftSkills from "./assets/images/GoogleSoftSkillsProgram.png";
+import aspireLeaders from "./assets/images/2024AspireLeadersProgram.png";
+import ibmAI from "./assets/images/IBM.png";
+import linkedinProfile from "./assets/images/5waysbuildbetterlinkedinprofile.png";
+import generativeAI from "./assets/images/IntroductiontoGenerativeAI.png";
+import excel from "./assets/images/Excel.png";
+import aiForEveryone from "./assets/images/AIforeveryone.png";
+import encoderDecoder from "./assets/images/encoderdecoder.png";
+import vertexAI from "./assets/images/VertexAI.png";
+import fundamentalsManagement from "./assets/images/fundamentalsofmanagement.png";
+import aiInsight from "./assets/images/ArtificialIntelligenceInsightforBeginners.png";
+import pec from "./assets/images/PEC.png";
 
 /* Splash Screen */
 const splashScreen = {
@@ -27,7 +68,7 @@ const greeting = {
     "Embedded Systems Engineer 🔐 | RFID & RTLS Software • Secure Embedded Systems • FPGA & SoC Design • Hardware Security (SCA, EMFI, DFA) • RF Signal Processing"
   ),
   resumeLink: "",
-  profileImage: require("./assets/images/formal_photo.png"),
+  profileImage: profilePhoto,
   displayGreeting: true
 };
 
@@ -93,7 +134,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Grenoble INP – Esisar (Université Grenoble Alpes)",
-      logo: require("./assets/images/esisar.png"),
+      logo: esisarLogo, 
       subHeader: "International Master in Embedded Systems Security (IMESS)",
       duration: "Sep 2025 – Sep2026",
       desc:
@@ -106,7 +147,7 @@ const educationInfo = {
     },
     {
       schoolName: "COMSATS University Islamabad",
-      logo: require("./assets/images/comsats.png"),
+      logo: comsatsLogo,
       subHeader: "BSc Electrical (Electronics) Engineering",
       duration: "Sep 2020 – Sep 2024",
       desc:
@@ -141,7 +182,7 @@ const workExperiences = {
     {
       role: "Embedded Systems Engineer Intern – RFID & RTLS Software",
       company: "Acceliot",
-      companylogo: require("./assets/images/acceliot_logo.png"),
+      companylogo: acceliotLogo,
       date: "Feb 2026 – Present",
       desc:
         "Development of a standalone Software Service Platform (SSP) for UHF RFID-based RTLS and DSAI systems.",
@@ -156,7 +197,7 @@ const workExperiences = {
     {
       role: "Embedded Systems Engineer",
       company: "Lean Automation",
-      companylogo: require("./assets/images/lean_automation.png"),
+      companylogo: leanLogo,
       date: "Sep 2024 – Aug2025",
       desc:
         "Embedded firmware and PCB design for industrial automation systems.",
@@ -171,7 +212,7 @@ const workExperiences = {
     {
   role: "Artificial Intelligence Intern",
   company: "CodeAlpha",
-  companylogo: require("./assets/images/codealpha.png"),
+  companylogo: codealphaLogo,
   date: "Aug 2024 – Sep 2024",
   desc:
     "Short-term internship focused on applied machine learning and neural network development.",
@@ -195,7 +236,7 @@ const bigProjects = {
     "Selected high-impact projects in hardware security, FPGA systems, and RFID-based localization.",
   projects: [
     {
-      image: require("./assets/images/zynq_aes.png"),
+      image: zynqAES,
       projectName: "FPGA-Based Out-of-Band AES Encryption (Zynq SoC)",
       projectDesc:
         "Hardware-isolated AES engine with secure key management implemented on Zynq SoC.",
@@ -207,7 +248,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/emfi_dfa.png"),
+      image: emfiDfa,
       projectName: "EM Fault Injection & DFA on AES-128",
       projectDesc:
         "Electromagnetic fault injection attack with differential fault analysis for cryptographic key recovery.",
@@ -219,7 +260,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/aes_cpa.png"),
+      image: aesCpa,
       projectName: "Correlation Power Analysis (CPA) on AES-128",
       projectDesc:
         "Full 128-bit AES key recovery using oscilloscope power traces and statistical leakage analysis.",
@@ -231,7 +272,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/rfid_phase_loc.png"),
+      image: rfidPhase,
       projectName: "Phase-Based UHF RFID Localization",
       projectDesc:
         "RF signal processing pipeline achieving ±30 cm indoor localization accuracy.",
@@ -260,40 +301,54 @@ const otherProjects = {
 
     projects: [
     {
+      title: "Enhanced Cruise Control with Driver Alert for Hazardous Road Conditions",
+      subtitle: "Final-Year Project - Advanced cruise control system with sensor fusion and real-time hazard alerts.",
+      description: "Developed an advanced cruise control system that leverages sensors to enhance road safety. The system dynamically adjusts vehicle speed and provides real-time hazard alerts. Designed system architecture, implemented sensor fusion, and conducted extensive testing for improved safety and reliability.",
+      image: enhancedCruiseControl,
+      footerLink: []
+    },
+    {
       title: "8-bit Wallace Tree Multiplier (Cadence)",
       subtitle: "High-speed digital arithmetic design using CMOS and Wallace-tree architecture.",
-      image: require("./assets/images/wallacetree.png"),
+      image: wallaceTree,
       footerLink: []
     },
     {
       title: "Closed-Loop Motor & Generator Control",
       subtitle: "PID-based control system implemented in MATLAB Simulink with Arduino integration.",
-      image: require("./assets/images/closedloopmotor.png"),
+      image: closedLoopMotor,
       footerLink: []
     },
     {
       title: "PIC18F Coffee Machine Controller",
       subtitle: "Assembly-level embedded system using timers, GPIOs, and interrupts.",
-      image: require("./assets/images/PIC18f.png"),
+      image: picCoffee,
       imageAlt: "Embedded Project",
       footerLink: []
     },
     {
       title: "RF Transmitter & Receiver (ADS)",
       subtitle: "RF system design and simulation for reliable wireless communication.",
-      image: require("./assets/images/rf.png"),
+      image: rfProject,
       footerLink: []
     },
     {
       title: "Buck-Boost Converter",
       subtitle: "Power electronics design for efficient DC voltage regulation.",
-      image: require("./assets/images/buckboost.png"),
+      image: buckBoost,
       footerLink: []
     },
     {
       title: "PLC-Based Burnt Fries Detection",
       subtitle: "Industrial automation system using PLC ladder logic.",
-      image: require("./assets/images/plcproject.png"),
+      image: plcProject,
+      footerLink: []
+    },
+    {
+      title: "Automatic Street Lighting System",
+      subtitle: "Energy-efficient automatic street lighting using infrared sensors and microcontrollers.",
+      description: "Developed an energy-efficient automatic street lighting system using infrared sensors and microcontrollers. The system optimizes energy usage by dynamically controlling lighting based on real-time detection, ensuring effective and sustainable operation.",
+      image: automaticStreetlight,
       footerLink: []
     }
   ],
@@ -308,36 +363,163 @@ const achievementSection = {
   
     display: true,
 
-  showLimit: 2, // ← ADD THIS LINE
+  showLimit: 6, // Show 6 certifications initially
 
     achievementsCards: [
     {
-      title: "IELTS (British Council)",
-      subtitle: "English proficiency certification (valid until Jan 2027).",
-      image: require("./assets/images/skill.svg"),
+      title: "Advanced Scheduling and Project Optimization in Primavera P6",
+      subtitle: "Issued by Packt (Jun 2025) • Credential ID: WIMCN1MORG2T",
+      image: primaveraP6,
       imageAlt: "Certification",
-      footerLink: [] // add your credential URL later if you want
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/WIMCN1MORG2T"
+        }
+      ]
     },
     {
-      title: "Primavera P6 – Advanced Scheduling & Optimization",
-      subtitle: "Project scheduling and optimization (Packt).",
-      image: require("./assets/images/skill.svg"),
+      title: "IELTS",
+      subtitle: "British Council • Issued: Jan 2025 · Expires: Jan 2027 • Skills: Spoken English",
+      image: ielts,
       imageAlt: "Certification",
       footerLink: []
     },
     {
-      title: "Registered Electrical Engineer (Pakistan Engineering Council)",
-      subtitle: "Professional engineering registration (PEC).",
-      image: require("./assets/images/skill.svg"),
+      title: "Google Soft Skills Program",
+      subtitle: "Issued: Dec 2024",
+      image: googleSoftSkills,
       imageAlt: "Certification",
       footerLink: []
     },
     {
-      title: "Blockchain & AI Fundamentals",
-      subtitle: "Online Professional Certification",
-      image: require("./assets/images/AI-and-Blockchain.png"),
+      title: "2024 Aspire Leaders Program",
+      subtitle: "Aspire Institute • Issued: Nov 2024",
+      image: aspireLeaders,
       imageAlt: "Certification",
-      footerLink: []  
+      footerLink: []
+    },
+    {
+      title: "Introduction to Artificial Intelligence (AI)",
+      subtitle: "IBM • Issued: Sep 2023 • Credential ID: 456AFFCRZLF8",
+      image: ibmAI,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/456AFFCRZLF8"
+        }
+      ]
+    },
+    {
+      title: "5 Ways to Build a Better LinkedIn Profile",
+      subtitle: "Coursera • Issued: Feb 2024 • Credential ID: H3V9Q6Y5PBM3",
+      image: linkedinProfile,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/H3V9Q6Y5PBM3"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Generative AI",
+      subtitle: "Google Cloud Training Online • Issued: Oct 2023 • Credential ID: SKD88H2YU7TN",
+      image: generativeAI,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/SKD88H2YU7TN"
+        }
+      ]
+    },
+    {
+      title: "Getting Started with Microsoft Excel",
+      subtitle: "Google Cloud Training Online • Issued: Aug 2023 • Credential ID: BVP2H2EY8J8L",
+      image: excel,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/BVP2H2EY8J8L"
+        }
+      ]
+    },
+    {
+      title: "Web3 and Blockchain Fundamentals",
+      subtitle: "INSEAD • Issued: Oct 2023 • Credential ID: FN4ALBJA66FC",
+      image: aiBlockchain,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/FN4ALBJA66FC"
+        }
+      ]
+    },
+    {
+      title: "AI For Everyone",
+      subtitle: "DeepLearning.AI • Issued: Jan 2024 • Credential ID: KBQDDBWQTL3N",
+      image: aiForEveryone,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/KBQDDBWQTL3N"
+        }
+      ]
+    },
+    {
+      title: "Encoder-Decoder Architecture",
+      subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: GMSFGANL726Q",
+      image: encoderDecoder,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/GMSFGANL726Q"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Vertex AI Studio",
+      subtitle: "Google Cloud Training Online • Issued: Jan 2024 • Credential ID: WQ9ZTBK8VKQ7",
+      image: vertexAI,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/WQ9ZTBK8VKQ7"
+        }
+      ]
+    },
+    {
+      title: "Fundamentals of Management",
+      subtitle: "UC Irvine • Issued: Mar 2025 • Credential ID: ZIK516F9S02W",
+      image: fundamentalsManagement,
+      imageAlt: "Certification",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/records/ZIK516F9S02W"
+        }
+      ]
+    },
+    {
+      title: "Artificial Intelligence – Insight for Beginners",
+      subtitle: "Microsoft Student Ambassadors – Imagine Cup",
+      image: aiInsight,
+      imageAlt: "Certification",
+      footerLink: []
+    },
+    {
+      title: "Registered Electrical Engineer",
+      subtitle: "Pakistan Engineering Council (PEC) • Issued: Dec 2024",
+      image: pec,
+      imageAlt: "Certification",
+      footerLink: []
     }
   ],
   display: true

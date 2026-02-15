@@ -23,20 +23,28 @@
   padding-top: 20px;
 }
 
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
   .education-card-container {
     padding-top: 0px;
   }
   .education-heading {
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
   }
   .education-text-subtitle {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
+  }
+  .education-section {
+    width: 95%;
   }
 }
 
-@media (max-width: 768px) {
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
   .education-card-container {
     padding-top: 0px;
   }
@@ -46,5 +54,33 @@
   }
   .education-text-subtitle {
     font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .education-heading {
+    font-size: 40px;
+  }
+  .education-text-subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .education-heading {
+    font-size: 40px;
+  }
+  .education-text-subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .education-heading {
+    font-size: 56px;
   }
 }

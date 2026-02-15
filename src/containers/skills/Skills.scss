@@ -28,23 +28,49 @@
   color: $subTitle;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
+  .skills-main-div {
+    flex-direction: column;
+  }
   .skills-heading {
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 15px;
+  }
+  .skills-text {
+    font-size: 14px;
+  }
+  .skills-text-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .skills-image-div {
+    display: none;
   }
 }
-@media (max-width: 768px) {
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills-main-div {
+    flex-direction: column;
+  }
   .skills-heading {
     font-size: 30px;
     text-align: center;
   }
   .greeting-text-p {
     font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
+    line-height: 1.5;
   }
   .skills-text-div {
     margin-left: 0px;
@@ -58,7 +84,28 @@
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
+    display: none;
     order: 2;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .skills-heading {
+    font-size: 56px;
   }
 }

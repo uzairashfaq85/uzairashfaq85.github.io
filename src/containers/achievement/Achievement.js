@@ -79,15 +79,13 @@ export default function Achievement() {
           {/* More / Less Button */}
           {achievementSection.achievementsCards.length > limit && (
 
-            <div style={{ textAlign: "center", marginTop: "20px" }}>
+            <div className="achievement-button-container">
 
               <button
-                className="project-button"
+                className="achievement-button"
                 onClick={() => setShowMore(!showMore)}
               >
-                {showMore
-                  ? "Show Less"
-                  : "More Certifications"}
+                {showMore ? "Show Less" : "More Certifications"}
               </button>
 
             </div>

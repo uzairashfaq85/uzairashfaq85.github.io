@@ -61,7 +61,7 @@
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Agustina";
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
@@ -157,9 +157,41 @@
   top: 0;
 }
 
-/* 48em = 768px */
+/* Responsive Media Queries */
 
-@media (min-width: 48em) {
+/* Mobile First - for small screens */
+@media (max-width: 599px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+  }
+  .header .logo {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+  .header .menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: $lightBackground1;
+  }
+  .dark-menu {
+    background-color: $darkBackground !important;
+  }
+  .header li a {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  .header .menu-icon {
+    padding: 20px 15px;
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 600px) {
   .header li {
     float: left;
   }
@@ -175,8 +207,26 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+
+/* Medium tablets */
+@media (max-width: 960px) and (min-width: 600px) {
   .header {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .header .logo-name {
+    padding: 0 8px;
+  }
+  .header li a {
+    padding: 12px 15px;
+  }
+}
+
+/* Large tablets and desktops */
+@media (min-width: 961px) {
+  .header {
+    font-size: 16px;
+  }
+  .header li a {
+    transition: background-color 0.3s ease;
   }
 }

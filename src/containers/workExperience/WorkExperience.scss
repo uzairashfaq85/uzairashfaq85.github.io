@@ -21,17 +21,54 @@
   flex: 1;
 }
 
-/* Media Query */
+/* Media Query - Mobile First Approach */
 
-@media (max-width: 1380px) {
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
+  .experience-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+  .experience-cards-div {
+    grid-template-columns: 1fr;
+    gap: 1rem 0.5rem;
+  }
+  .experience-container {
+    width: 95%;
+  }
+}
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .experience-cards-div {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+  .experience-cards-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
   .experience-heading {
     font-size: 40px;
   }
 }
 
-@media (max-width: 768px) {
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
   .experience-heading {
-    font-size: 30px;
-    text-align: center;
+    font-size: 56px;
   }
 }

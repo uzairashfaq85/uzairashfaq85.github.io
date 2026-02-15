@@ -45,13 +45,31 @@
   color: $subTitle;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
   .blog-header-text {
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .blog-subtitle {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+  }
+  .blog-text-div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .square {
+    width: 100%;
+    height: auto;
   }
 }
-@media (max-width: 768px) {
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
   .blog-header-text {
     font-size: 30px;
     text-align: center;
@@ -61,10 +79,38 @@
     line-height: normal;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 480px) and (min-width: 300px) {
   .blog-text-div {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .square {
+    height: auto;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog-header-text {
+    font-size: 40px;
+  }
+  .blog-text-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .blog-header-text {
+    font-size: 40px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .blog-header-text {
+    font-size: 56px;
+  }
+  .blog-text-div {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 }

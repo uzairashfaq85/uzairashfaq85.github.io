@@ -145,13 +145,15 @@ export default function StartupProject() {
                   }
                 >
 
-                  <div className="project-image">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="card-image"
-                    />
-                  </div>
+                  {project.image && (
+                    <div className="project-image">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="card-image"
+                      />
+                    </div>
+                  )}
 
                   <div className="project-detail">
 

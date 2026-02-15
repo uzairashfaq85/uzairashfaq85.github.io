@@ -1,12 +1,8 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-
-@font-face {
-  font-family: "Agustina";
-  src: url("./assets/fonts/Agustina.woff") format("woff");
-}
+@import "./assets/fonts/fonts.css";
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -21,12 +17,56 @@ body {
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-/* Media Query */
-@media (max-width: 1380px) {
+
+* {
+  box-sizing: border-box;
+}
+
+/** Responsive Font Sizes **/
+
+/* Mobile - Extra Small Devices (320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
   html,
   body {
-    font-size: rem;
-    line-height: normal;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Tablets - Small Devices (481px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* Medium Devices (769px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+/* Large Devices (1025px and up) */
+@media (min-width: 1025px) {
+  html,
+  body {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1380px) {
+  html,
+  body {
+    font-size: 19px;
+    line-height: 23px;
   }
 }

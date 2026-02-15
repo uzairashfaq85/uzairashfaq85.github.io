@@ -15,18 +15,54 @@
   gap: 1rem 1rem;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
+/* Media Query - Mobile First Approach */
+
+/* Extra Small Devices (320px to 480px) */
+@media (max-width: 480px) {
   .project-title {
-    font-size: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 768px) {
+
+/* Small Devices / Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
   .project-title {
     font-size: 30px;
     text-align: center;
   }
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+    gap: 1rem 0.5rem;
+  }
+}
+
+/* Medium Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-title {
+    font-size: 40px;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Devices (1025px to 1380px) */
+@media (min-width: 1025px) and (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+}
+
+/* Extra Large Devices (1380px and up) */
+@media (min-width: 1381px) {
+  .project-title {
+    font-size: 52px;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
