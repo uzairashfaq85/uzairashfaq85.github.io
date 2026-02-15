@@ -22,8 +22,8 @@ import picCoffee from "./assets/images/PIC18f.png";
 import rfProject from "./assets/images/rf.png";
 import buckBoost from "./assets/images/buckboost.png";
 import plcProject from "./assets/images/plcproject.png";
-import enhancedCruiseControl from "./assets/images/closedloopmotor.png";
-import automaticStreetlight from "./assets/images/rf.png";
+import enhancedCruiseControl from "./assets/images/Enhcancedcruisecontrol.png";
+import automaticStreetlight from "./assets/images/AutomaticStreetlight.png";
 
 import skillIcon from "./assets/images/skill.svg";
 
