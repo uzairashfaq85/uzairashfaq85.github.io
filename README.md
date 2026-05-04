@@ -139,3 +139,13 @@ cd uzairashfaq85.github.io
 npm install
 
 npm start
+```
+
+## 🛠️ Build for Production
+
+To create a production-ready bundle:
+
+```bash
+npm run build
+```
+The optimized files will be generated in the `build/` folder.

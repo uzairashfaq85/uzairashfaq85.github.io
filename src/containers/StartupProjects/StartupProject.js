@@ -2,11 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import "./StartupProjects.scss";
 import { bigProjects, otherProjects } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import Button from "../../components/button/Button";
+
 
 export default function StartupProject() {
 
   const [isVisible, setIsVisible] = useState(false);
+  const [showMoreAcademic, setShowMoreAcademic] = useState(false);
 
   useEffect(() => {
     // Ensure the section is always visible after a minimal delay
@@ -145,7 +146,7 @@ export default function StartupProject() {
             <div className="projects-container">
 
               {otherProjects.projects
-                .slice(0, otherProjects.showLimit || otherProjects.projects.length)
+                .slice(0, showMoreAcademic ? otherProjects.projects.length : (otherProjects.showLimit || otherProjects.projects.length))
                 .map((project, i) => (
 
                 <div
@@ -192,11 +193,15 @@ export default function StartupProject() {
             </div>
 
             {otherProjects.showLimit && otherProjects.projects.length > otherProjects.showLimit && (
-              <Button
-                text={"More Projects"}
-                className="project-button"
-                href="#projects"
-              />
+              <div className="project-button">
+                <button
+                  className="main-button"
+                  style={{ marginTop: "2rem", display: "inline-block", cursor: "pointer", border: "none", outline: "none" }}
+                  onClick={() => setShowMoreAcademic(!showMoreAcademic)}
+                >
+                  {showMoreAcademic ? "Show Less" : "More Projects"}
+                </button>
+              </div>
             )}
 
           </div>

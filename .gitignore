@@ -25,3 +25,10 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+# IDE and tooling
+.vscode/
+.planning/
+.agents/
+graphify-out/
+

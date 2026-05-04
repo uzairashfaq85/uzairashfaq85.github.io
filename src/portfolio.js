@@ -25,7 +25,7 @@ import plcProject from "./assets/images/plcproject.png";
 import enhancedCruiseControl from "./assets/images/Enhcancedcruisecontrol.png";
 import automaticStreetlight from "./assets/images/AutomaticStreetlight.png";
 
-import skillIcon from "./assets/images/skill.svg";
+
 
 import primaveraP6 from "./assets/images/primavera-p6.png"; 
 import ielts from "./assets/images/IELTS.png"; 
@@ -164,7 +164,7 @@ const educationInfo = {
    Technical Focus Bars
    ================================ */
 const techStack = {
-  viewSkillBars: true,
+  viewSkillBars: false,
   experience: [
     { Stack: "Embedded & RFID Software", progressPercentage: "90%" },
     { Stack: "Hardware Security & Cryptography", progressPercentage: "85%" },
@@ -348,8 +348,7 @@ const otherProjects = {
       image: automaticStreetlight,
       footerLink: []
     }
-  ],
-  display: true
+  ]
 };
 
 
