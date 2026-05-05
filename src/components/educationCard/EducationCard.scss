@@ -120,6 +120,10 @@
   .education-card-border {
     width: 100%;
   }
+  .education-head {
+    flex-direction: column;
+    align-items: center;
+  }
   .education-roundedimg {
     margin-top: 10px;
     width: 4rem;
@@ -127,8 +131,15 @@
     margin-bottom: 1rem;
     margin-right: 0;
   }
+  .education-text-school {
+    white-space: normal;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+  }
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+    text-align: left;
   }
 }

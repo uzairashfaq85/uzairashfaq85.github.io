@@ -29,3 +29,24 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dev-icons {
+    font-size: 2.5rem;
+  }
+  .software-skill-inline {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-icons {
+    font-size: 2rem;
+  }
+  .software-skill-inline {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

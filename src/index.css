@@ -26,6 +26,19 @@ body {
   box-sizing: border-box;
 }
 
+/* Responsive images by default */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Accessible focus states */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #6c63ff;
+  outline-offset: 2px;
+}
+
 /** Responsive Font Sizes **/
 
 /* Mobile - Extra Small Devices (320px and up) */
