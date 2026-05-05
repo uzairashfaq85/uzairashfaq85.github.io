@@ -31,3 +31,8 @@ public/blogs.json
 .agents/
 graphify-out/
 
+# Deprecated/unused scripts & docs
+fetch.js
+GIT_COMMANDS.md
+DEPLOYMENT.md
+
