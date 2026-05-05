@@ -18,6 +18,8 @@
   line-height: 1.5rem;
 }
 .certificate-card {
+  flex: 1 1 300px;
+  max-width: 380px;
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 1.5rem;
@@ -45,9 +47,10 @@
   align-items: center;
 }
 .achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 .certificate-card-footer {
   display: flex;
