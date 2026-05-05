@@ -80,6 +80,8 @@ const socialMediaLinks = {
   github: "https://github.com/uzairashfaq85",
   linkedin: "https://www.linkedin.com/in/uzairashfaq85",
   gmail: "uzairashfaq85@gmail.com",
+  whatsapp: "https://wa.me/33745465298",
+  phone: "+33 7 45 46 52 98",
   display: true
 };
 

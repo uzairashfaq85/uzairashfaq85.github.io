@@ -29,30 +29,6 @@ export default function Contact() {
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number.replace(/\s+/g, "")}
-                  >
-                    <i className="fas fa-phone-alt" style={{marginRight: "10px"}}></i>
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                  <a
-                    className="contact-detail"
-                    href={"https://wa.me/" + contactInfo.number.replace(/[\s+]/g, "")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-whatsapp" style={{marginRight: "10px"}}></i>
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
