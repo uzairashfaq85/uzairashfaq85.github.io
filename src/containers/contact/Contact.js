@@ -33,8 +33,20 @@ export default function Contact() {
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + contactInfo.number}
+                    href={"tel:" + contactInfo.number.replace(/\s+/g, "")}
                   >
+                    <i className="fas fa-phone-alt" style={{marginRight: "10px"}}></i>
+                    {contactInfo.number}
+                  </a>
+                  <br />
+                  <br />
+                  <a
+                    className="contact-detail"
+                    href={"https://wa.me/" + contactInfo.number.replace(/[\s+]/g, "")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-whatsapp" style={{marginRight: "10px"}}></i>
                     {contactInfo.number}
                   </a>
                   <br />
@@ -45,6 +57,7 @@ export default function Contact() {
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
               >
+                <i className="fas fa-envelope" style={{marginRight: "10px"}}></i>
                 {contactInfo.email_address}
               </a>
               <br />

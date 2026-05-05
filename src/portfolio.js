@@ -571,7 +571,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Open to permanent roles and long-term contracts in Embedded Systems, RFID/RTLS, Secure IoT, and Hardware Security.",
-    email_address: "uzairashfaq85@gmail.com"
+  number: "+33 7 45 46 52 98",
+  email_address: "uzairashfaq85@gmail.com"
 };
 
 
