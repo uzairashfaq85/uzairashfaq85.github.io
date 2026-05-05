@@ -142,7 +142,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.phone ? (
         <a
-          href={`tel:${socialMediaLinks.phone.replace(/[\s+]/g, "")}`}
+          href={`tel:${socialMediaLinks.phone.replace(/\s/g, "")}`}
           className="icon-button phone"
         >
           <i className="fas fa-phone-alt"></i>
